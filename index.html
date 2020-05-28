@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sablon</title>
+</head>
+<body>
+	<script>
+		function Student(name, address, phone, course) {
+			this.name = name;
+			this.address = address;
+			this.phone = phone;
+			this.course = course;
+
+			this.getName = function() {
+				return this.name;
+			}
+
+			this.getInfo = function() {
+				return "Name: " +  this.name + "\n" +
+				"Address: " + this.address + "\n" +
+				"Phone: " + this.phone + "\n" +
+				"Course: " + this.course
+			}
+			
+		}
+		let stu1 = new Student("Petar Petrovic", "Straßburger Straße", 62155584789, "Geography"); 
+
+		let stu1Name = stu1.getName();
+		let stu1Info = stu1.getInfo();           
+
+		console.log(stu1Name);
+		console.log(stu1Info);
+
+		let stu2 = new Student("John Smith", "High Park 36", 5078333567, "Serbisch"); 
+
+		let stu2Name = stu2.getName();
+		let stu2Info = stu2.getInfo();           
+
+		console.log(stu2Name);
+		console.log(stu2Info);
+
+		let stu3 = new Student("Maximilian Schweißer", "Althener Straße 8", 491558775514, "Geografija"); 
+
+		let stu3Name = stu3.getName();
+		let stu3Info = stu3.getInfo();           
+
+		console.log(stu3Name);
+		console.log(stu3Info);
+	</script>
+</body>
+</html>
